@@ -1,0 +1,14 @@
+---
+title: "Rachel Novick"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: spacelab
+---
+
+# About Me
+
+I am an MPH student at Columbia University’s Mailman School of Public Health, specializing in Epidemiology with a certificate in Applied Biostatistics & Public Health Data Science. My training combines data-driven analysis with a deep commitment to improving health outcomes. Experience in nonprofit, clinical research, and industry settings has given me a versatile problem-solving toolkit and a clear guiding principle: rigorous research should ultimately serve people.
+
+![](images/linkedin.jpeg)

@@ -1,0 +1,87 @@
+---
+title: "Flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(plotly)
+library(tidyverse)
+library(p8105.datasets)
+data("instacart")
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+instacart |> 
+  count(product_name, aisle, department, sort = TRUE) |>  
+  slice_max(n, n = 10) |>                                 
+  mutate(
+    label = str_c("Product Name: ", product_name,
+                  "\nAisle: ", aisle,
+                  "\nDepartment: ", department,
+                  "\nNumber of Orders: ", n)
+  ) |> 
+  plot_ly(
+    x = ~product_name,
+    y = ~n,
+    color = ~aisle,
+    type = "bar",
+    text = ~label
+  ) |> 
+  plotly::layout(
+    title = "Top 10 Products by Orders",
+    xaxis = list(title = "Product"),
+    yaxis = list(title = "Number of Orders")
+  )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+instacart |> 
+  group_by(department) |> 
+  summarise(total_orders = n()) |> 
+  plot_ly(labels = ~department, values = ~total_orders, type = "pie") |> 
+  plotly::layout(title = "Share of Orders by Department")
+```
+
+### Chart C
+
+```{r}
+instacart |> 
+  group_by(order_id, order_dow) |> 
+  summarise(items_in_order = n(), .groups = "drop") |> 
+  group_by(order_dow) |> 
+  summarise(mean_items = mean(items_in_order), .groups = "drop") |> 
+  mutate(
+    day_label = factor(order_dow,
+                       levels = 0:6,       # adjust if 0=Sun, 1=Mon, etc.
+                       labels = c("Sun","Mon","Tue","Wed","Thu","Fri","Sat")),
+    label = str_c("Day: ", day_label,
+                  "\nMean Items per Order: ", round(mean_items,2))
+  ) |> 
+  plot_ly(
+    x = ~day_label,
+    y = ~mean_items,
+    type = "scatter",
+    mode = "lines+markers",    
+    text = ~label
+  ) |> 
+  plotly::layout(
+    title = "Mean Items per Order by Day of Week",
+    xaxis = list(title = "Day of Week"),
+    yaxis = list(title = "Mean Number of Items per Order")
+  )
+```
+

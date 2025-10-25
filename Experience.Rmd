@@ -1,0 +1,90 @@
+---
+title: "Experience"
+output: html_document
+
+---
+
+### Education
+
+**Columbia University Mailman School of Public Health** – New York, NY  
+_Master of Public Health in Epidemiology_  
+Certificate in Applied Biostatistics & Public Health Data Science  
+**Coursework:** Applied Regression I & II, Data Science I, Analysis of Categorical Data, Epidemiology II, Epidemiology III, Applications of Epidemiologic Research Methods, Emerging Infectious Diseases  
+
+**Washington University in St. Louis** – St. Louis, MO  
+_Bachelor of Arts in Biology_  
+Minor in Spanish  
+
+
+### Skills and Professional Training
+
+**Data Analysis, Research, and Technical Skills:** SAS, R, Qualtrics, Excel, epidemiologic study design, literature review, EMR review, abstract and manuscript writing  
+**Language:** Spanish – advanced  
+
+
+### Experience
+
+**The Office of Educational Initiatives, Mailman School of Public Health** – New York, NY  
+_Lead Teaching Assistant – Research Methods and Applications: Quantitative Foundations_  
+June 2025 – December 2025  
+Manage course operations for 373 graduate students, leading a team of 20 teaching assistants and serving as primary liaison among faculty, administration, and students.  
+Partner with faculty to design assignments, rubrics, and assessments; oversee grading accuracy, implement accommodations, and ensure timely communication of results.  
+Coordinate logistics including scheduling, course site management, and issue resolution, supporting smooth delivery of all course components.  
+
+**Stratis Group** – New York, NY  
+_Analyst_  
+September 2025 – Present  
+Support epidemiologic research initiatives for biotech and pharmaceutical clients through literature review and data synthesis, informing strategic decisions on drug development and licensing.  
+
+**Rehabilitation and Human Performance, Mount Sinai Health System** – New York, NY  
+_MPH Intern_  
+June 2025 – Present  
+Conduct epidemiologic evaluation of traumatic brain injury case definitions by validating ICD codes against clinician notes in electronic medical records at the Brain Injury Research Center of Mount Sinai.  
+Perform statistical analyses of study results in SAS and contribute to manuscript development.  
+Assist with a systematic review on neurovascular biomarkers for TBI, including database searching, screening, extraction, and manuscript drafting for publication.  
+
+**Arthur Ashe Institute for Urban Health** – Brooklyn, NY  
+_Consultant_  
+August 2024 – July 2025  
+_(Senior Education Coordinator – May 2024 – August 2024 | Alumni Coordinator – September 2022 – May 2024)_  
+Analyzed data tracking over 1100 program alumni to assess needs, strengthen the alumni network, and inform funders and stakeholders using Qualtrics and Excel.  
+Designed and led a survey study of recent high school graduates, doubling historic response rates and authoring an abstract accepted for presentation at the 2023 APHA Annual Meeting.  
+Designed a survey study investigating the trajectory of underrepresented STEM students served by the Health Science Academy and the impact of COVID-19 on their college and career journeys.  
+Led the design and facilitation of a professional development and college preparedness workshop series and a pilot summer internship program focused on health science workforce development, serving over 100 attendees each semester.  
+Established and maintained partnerships with college admissions officers and external partners.  
+Instructed underserved high school students in college-level anatomy and physiology courses with a focus on health disparities and social determinants of health; taught middle school health science enrichment classes.  
+Recruited, trained, and supervised over 20 staff and instructors annually.  
+Served as primary liaison with the STEM PUSH National Collaborative, presenting at biannual convenings.  
+
+**Rock Properties** – Newark, NJ  
+_Litigation Manager_  
+July 2022 – August 2024  
+Managed litigation process for a property management company overseeing 1500 tenants across 15 properties.  
+Developed and maintained a court tracking system to improve organization and efficiency; prepared court filings accurately.  
+Liaised with outside counsel and court officials and coordinated with resident and property managers.  
+
+**Fulbright, U.S. Department of State** – Logroño, La Rioja, Spain  
+_English Teaching Assistant_  
+September 2021 – June 2022  
+Prepared and taught lessons in English, science, math, and other subjects for secondary students.  
+Served as a cultural ambassador for the United States.  
+
+**Tyson Research Center** – Eureka, MO  
+_Education Fellow_  
+June 2021 – August 2021  
+Developed, coordinated, and led educational programming for 20 undergraduate and high school students participating in 10-week field research experiences.  
+
+**Tyson Research Center** – Eureka, MO  
+_Undergraduate Research Fellow_  
+May 2019 – August 2019  
+Collected data from tick and passerine bird populations to study the effects of prescribed fire on vector-borne diseases.  
+Conducted independent research on the impact of intestinal parasites on bird body condition; presented at the 2019 Undergraduate Research Symposium.  
+
+
+### Publications
+
+Novick, R., Williams, J., Zhen, D., Gonzalez, H., James, T., Valmont, M., Soros, H., Fraser, M. (2023, November). _Assessing the needs of URM college students to support their educational and professional careers in STEM: Providing college/career prep workshops._ In APHA’s 2023 Annual Meeting and Expo (Nov. 12–15). APHA.  
+
+Williams, J., Valmont, M., Jackson, S., De La Torre, R., Ahoranian, M., Gonzalez, H., Tusar, M., Orine, F., James, T., Novick, R., Soros, H., Fraser, M. (2023, November). _Early mentorship of underrepresented minority (URM) students: Piloting a 1-to-1 mentoring program with high school and college students as a strategy for diversifying and developing the healthcare workforce._ In APHA’s 2023 Annual Meeting and Expo (Nov. 12–15). APHA.  
+
+Go back to the [home page](index.html).

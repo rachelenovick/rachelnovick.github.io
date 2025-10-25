@@ -1,0 +1,83 @@
+---
+title: "Plots"
+output: html_document
+date: "2025-10-25"
+---
+
+```{r}
+library(tidyverse)
+library(lubridate)
+library(plotly)
+library(p8105.datasets)
+data("instacart")
+```
+
+
+```{r}
+instacart |> 
+  count(product_name, aisle, department, sort = TRUE) |>  
+  slice_max(n, n = 10) |>                                 
+  mutate(
+    label = str_c("Product Name: ", product_name,
+                  "\nAisle: ", aisle,
+                  "\nDepartment: ", department,
+                  "\nNumber of Orders: ", n)
+  ) |> 
+  plot_ly(
+    x = ~product_name,
+    y = ~n,
+    color = ~aisle,
+    type = "bar",
+    text = ~label
+  ) |> 
+  layout(
+    title = "Top 10 Products by Orders",
+    xaxis = list(title = "Product"),
+    yaxis = list(title = "Number of Orders")
+  )
+
+```
+
+```{r}
+instacart |> 
+  group_by(department) |> 
+  summarise(total_orders = n()) |> 
+  plot_ly(labels = ~department, values = ~total_orders, type = "pie") |> 
+  layout(title = "Share of Orders by Department")
+  
+```
+
+```{r}
+instacart |> 
+  group_by(order_id, order_dow) |> 
+  summarise(items_in_order = n(), .groups = "drop") |> 
+  group_by(order_dow) |> 
+  summarise(mean_items = mean(items_in_order), .groups = "drop") |> 
+  mutate(
+    day_label = factor(order_dow,
+                       levels = 0:6,       # adjust if 0=Sun, 1=Mon, etc.
+                       labels = c("Sun","Mon","Tue","Wed","Thu","Fri","Sat")),
+    label = str_c("Day: ", day_label,
+                  "\nMean Items per Order: ", round(mean_items,2))
+  ) |> 
+  plot_ly(
+    x = ~day_label,
+    y = ~mean_items,
+    type = "scatter",
+    mode = "lines+markers",    
+    text = ~label
+  ) |> 
+  layout(
+    title = "Mean Items per Order by Day of Week",
+    xaxis = list(title = "Day of Week"),
+    yaxis = list(title = "Mean Number of Items per Order")
+  )
+  
+
+```
+
+
+
+
+
+
