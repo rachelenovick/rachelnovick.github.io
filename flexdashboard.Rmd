@@ -40,7 +40,7 @@ instacart |>
     title = "Top 10 Products by Orders",
     xaxis = list(title = "Product"),
     yaxis = list(title = "Number of Orders")
-  )
+  ) 
 ```
 
 Column {data-width=350}
